@@ -1,0 +1,57 @@
+# ===== Kredensial / konfigurasi rahasia =====
+# Berisi username & password database. Salin dari database.example.php
+application/config/database.php
+# Kredensial SMTP. Salin dari email_secret.example.php
+application/config/email_secret.php
+.env
+.env.*
+*.key
+*.pem
+
+# ===== Konfigurasi server (cPanel / hosting) =====
+.htaccess
+!application/**/.htaccess
+!system/**/.htaccess
+.user.ini
+php.ini
+*.ini
+cgi-bin/
+.well-known/
+
+# ===== Dump database (berisi data karyawan / gaji) =====
+*.sql
+*.sql.gz
+sql export/
+
+# ===== Log & error =====
+error_log
+*.log
+application/logs/*
+!application/logs/index.html
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+# ===== Upload & file sementara =====
+temp_send/
+temp_upload/
+folderfoto/
+
+# ===== Arsip / sumber pihak ketiga (besar, bukan kode project) =====
+sumber/
+*.zip
+*.rar
+*.7z
+*.bak
+
+# ===== Dependency & tooling =====
+vendor/
+node_modules/
+composer.lock
+
+# ===== OS / editor =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
